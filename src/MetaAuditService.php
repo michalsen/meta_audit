@@ -9,88 +9,129 @@ use Drupal\Core\Link;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\Url;
 use Drupal\metatag\MetatagManagerInterface;
+use Drupal\metatag\Entity\MetatagDefaults;
 
 /**
  * Meta Tag Audit Service.
  */
-final class MetaAuditService {
+final class MetaAuditService
+{
+    use StringTranslationTrait;
 
-  // Use the StringTranslationTrait for translation.
-  use StringTranslationTrait;
+    protected $entityTypeManager;
+    protected $metatagManager;
 
-  /**
-   * Drupal entity type manager.
-   *
-   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
-   */
-  protected $entityTypeManager;
-
-  /**
-   * Metatag Audit Service.
-   *
-   * @var \Drupal\meta_audit\MetaAuditService
-   */
-  protected $metaAuditService;
-
-  /**
-   * Constructs a MetaAuditService object.
-   */
-  public function __construct(
-    MetatagManagerInterface $metatagManager,
-    EntityTypeManagerInterface $entityTypeManager,
-  ) {
-    $this->entityTypeManager = $entityTypeManager;
-  }
-
-  /**
-   * Retrieves node tags for nodes of a type content_type.
-   *
-   * @return array
-   *   Render array for the table of nodes and their meta tags.
-   */
-  public function getNodeTags($content_type) {
-    $nodeStorage = $this->entityTypeManager->getStorage('node');
-    $nodes = $nodeStorage->loadByProperties(['type' => $content_type]);
-
-    $header = [
-      $this->t('Node Title'),
-      $this->t('Meta Tags'),
-    ];
-
-    // Initialize the rows array.
-    $rows = [];
-    foreach ($nodes as $node) {
-      // Create a link to the node using the Link class.
-      $url = Url::fromRoute('entity.node.canonical', ['node' => $node->id()]);
-      $link = Link::fromTextAndUrl($node->label(), $url);
-
-      // Prepare the meta keys for this node.
-      $meta_keys = [];
-      if ($node->get('field_metatag')->value) {
-        $tags = json_decode($node->get('field_metatag')->value);
-        foreach ($tags as $tkey => $tvalue) {
-          $meta_keys[] = $tkey;
-        }
-      }
-
-      // Add a row to the table.
-      $rows[] = [
-        'data' => [
-          $link->toString(),
-          implode(', ', array_unique($meta_keys)),
-        ],
-      ];
+    public function __construct(
+        MetatagManagerInterface $metatagManager,
+        EntityTypeManagerInterface $entityTypeManager,
+    ) {
+        $this->metatagManager = $metatagManager;
+        $this->entityTypeManager = $entityTypeManager;
     }
 
-    // Create the render array for the table.
-    $build = [
-      '#theme' => 'table',
-      '#header' => $header,
-      '#rows' => $rows,
-    ];
+    public function getNodeTags(string $content_type): array
+    {
+        $nodeStorage = $this->entityTypeManager->getStorage('node');
+        $nodes = $nodeStorage->loadByProperties(['type' => $content_type]);
 
-    return $build;
+        $header = [
+            $this->t('Node Title'),
+            $this->t('Meta Tags'),
+            $this->t('Tag Sources'),
+        ];
 
-  }
+        $rows = [];
+        foreach ($nodes as $node) {
+            $url = Url::fromRoute('entity.node.canonical', ['node' => $node->id()]);
+            $link = Link::fromTextAndUrl($node->label(), $url);
 
+            // Get all possible meta tags for this node
+            $tags = $this->getAllMetaTagsForNode($node);
+
+            // Prepare display
+            $meta_keys = array_keys(array_filter($tags));
+            $sources = $this->getMetaTagSources($node, $tags);
+
+            $rows[] = [
+                'data' => [
+                    $link->toString(),
+                    implode(', ', $meta_keys),
+                    implode(', ', $sources),
+                ],
+            ];
+        }
+
+        return [
+            '#theme' => 'table',
+            '#header' => $header,
+            '#rows' => $rows,
+            '#empty' => $this->t('No nodes found.'),
+        ];
+    }
+
+    protected function getAllMetaTagsForNode($node): array
+    {
+        // 1. Check entity-specific tags first
+        $tags = $this->metatagManager->tagsFromEntity($node);
+
+        // 2. If empty, check if tags are stored in a field (common pattern)
+        if (empty($tags) && $node->hasField('field_meta_tags')) {
+            $field_value = $node->get('field_meta_tags')->value;
+            if (!empty($field_value)) {
+                $tags = unserialize($field_value);
+            }
+        }
+
+        // 3. Check content type defaults
+        if (empty($tags)) {
+            $content_type = $node->bundle();
+            $defaults = MetatagDefaults::load($content_type);
+            if ($defaults) {
+                $tags = $defaults->get('tags');
+            }
+        }
+
+        // 4. Check global defaults
+        if (empty($tags)) {
+            $global = MetatagDefaults::load('global');
+            if ($global) {
+                $tags = $global->get('tags');
+            }
+        }
+
+        return is_array($tags) ? $tags : [];
+    }
+
+    protected function getMetaTagSources($node, array $tags): array
+    {
+        $sources = [];
+
+        // Check where each tag came from
+        foreach ($tags as $key => $value) {
+            if (!empty($value)) {
+                // Check entity-specific first
+                $entity_tags = $this->metatagManager->tagsFromEntity($node);
+                if (isset($entity_tags[$key]) && !empty($entity_tags[$key])) {
+                    $sources[$key] = 'Node-specific';
+                    continue;
+                }
+
+                // Check content type defaults
+                $content_type = $node->bundle();
+                $defaults = MetatagDefaults::load($content_type);
+                if ($defaults && isset($defaults->get('tags')[$key])) {
+                    $sources[$key] = 'Content type default';
+                    continue;
+                }
+
+                // Check global defaults
+                $global = MetatagDefaults::load('global');
+                if ($global && isset($global->get('tags')[$key])) {
+                    $sources[$key] = 'Global default';
+                }
+            }
+        }
+
+        return array_unique($sources);
+    }
 }

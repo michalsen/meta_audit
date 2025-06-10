@@ -81,4 +81,3 @@ This project is licensed under the GPL-2.0+ license, consistent with Drupal core
 ---
 
 **Note**: This is development code and should not be used in production environments without thorough testing.
-
