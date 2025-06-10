@@ -1,0 +1,6 @@
+# History directory
+.history/
+
+# macOS system files
+.DS_Store
+
