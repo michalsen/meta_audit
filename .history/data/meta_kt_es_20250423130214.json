@@ -1,0 +1,611 @@
+[
+  {
+    "nid": "153088",
+    "title": "Su compañero de cuidado para la diálisis en casa",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/su-companero-de-cuidado-para-la-dialisis-en-casa",
+    "field_search_summary_text": "Como compañero de cuidados, puedes ayudar de muchas maneras, como organizar el espacio para el tratamiento, controlar los efectos secundarios y brindar apoyo. Las necesidades de cada persona son diferentes, por lo que tu papel puede variar.\n"
+  },
+  {
+    "nid": "153087",
+    "title": "Nutrición y diálisis en casa",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/nutricion-y-dialisis-en-casa",
+    "field_search_summary_text": "Aprenda sobre la nutrición y la diálisis en casa, incluyendo qué nutrientes, vitaminas y minerales debe consumir o limitar, así como los alimentos que los contienen.\n"
+  },
+  {
+    "nid": "25608",
+    "title": "Diálisis Peritoneal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/dialisis-peritoneal",
+    "field_search_summary_text": "La diálisis peritoneal utiliza el revestimiento de su abdomen para filtrar la sangre cuando los riñones fallan. Conozca el proceso, los tipos, los beneficios y desventajas, y las opciones de pago.\n"
+  },
+  {
+    "nid": "153062",
+    "title": "Diálisis en casa",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/dialisis-en-casa",
+    "field_search_summary_text": "Infórmate sobre la diálisis en casa, los diferentes tipos de tratamiento, los posibles beneficios y desventajas de la diálisis en casa, y cómo decidir si es la opción adecuada para ti.\n"
+  },
+  {
+    "nid": "152153",
+    "title": "Convertirse en un donante vivo",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/convertirse-en-un-donante-vivo",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "152154",
+    "title": "Recibir un trasplante de riñón de un donante vivo",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/recibir-un-trasplante-de-rinon-de-un-donante-vivo",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151704",
+    "title": "Açaí",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/acai",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "45051",
+    "title": "Hiperoxaluria primaria tipo 1",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/hiperoxaluria-primaria-tipo-1",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "152003",
+    "title": "La Hidratación Saludable y los Riñones",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/la-hidratacion-saludable-y-los-rinones",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151701",
+    "title": "Mariscos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/mariscos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151692",
+    "title": "Semillas de linaza y chía",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/semillas-de-linaza-y-chia",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151773",
+    "title": "Cítricos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/citricos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151702",
+    "title": "Huevos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/huevos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151698",
+    "title": "Cerezas",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/cerezas",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "103213",
+    "title": "Granos integrales",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/granos-integrales",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151159",
+    "title": "Hidronefrosis",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/hidronefrosis",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151820",
+    "title": "Insuficiencia renal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/insuficiencia-renal",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "27550",
+    "title": "Comprender sus valores de laboratorio y otros números de salud relacionados con la ERC",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/comprender-sus-valores-de-laboratorio-y-otros-numeros-de-salud-relacionados-con-la",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151774",
+    "title": "Hiponatremia (nivel bajo de sodio en sangre)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/hiponatremia-nivel-bajo-de-sodio-en-sangre",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "27648",
+    "title": "Enfermedad renal crónica (ERC)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151763",
+    "title": "Superalimentos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/superalimentos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150955",
+    "title": "Enfermedad renal crónica (ERC) en etapa 5",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc-en-etapa-5",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150954",
+    "title": "Enfermedad renal crónica (ERC) en etapa 4",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc-en-etapa-4",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150951",
+    "title": "Enfermedad renal crónica (ERC) en etapa 3b",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc-en-etapa-3b",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150950",
+    "title": "Enfermedad renal crónica (ERC) en etapa 3a",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc-en-etapa-3a",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150948",
+    "title": "Enfermedad renal crónica (ERC) en etapa 2",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc-en-etapa-2",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150947",
+    "title": "Enfermedad renal crónica (ERC) en etapa 1",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/enfermedad-renal-cronica-erc-en-etapa-1",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25426",
+    "title": "Diálisis",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/dialisis",
+    "field_search_summary_text": "Descubre la diálisis, sus tipos, eficacia y cómo se ajusta a tu vida. Aprende sobre su funcionamiento, efectos secundarios y consideraciones importantes.\n"
+  },
+  {
+    "nid": "27532",
+    "title": "Conozca los valores de sus riñones: Dos análisis sencillos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/conozca-los-valores-de-sus-rinones-dos-analisis-sencillos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25420",
+    "title": "Cistatina C",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/cistatina-c",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "151006",
+    "title": "Creatinina sérica (en sangre)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/creatinina-serica-en-sangre",
+    "field_search_summary_text": "La creatinina en sangre ayuda a evaluar la salud renal. Un nivel alto puede indicar problemas, pero otros factores también influyen en los resultados.\n"
+  },
+  {
+    "nid": "151146",
+    "title": "¿Es posible mejorar mi IFG?",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/es-posible-mejorar-mi-ifg",
+    "field_search_summary_text": "Comprenda cómo el índice de filtración glomerular estimado (IFGe) refleja la función renal, las diferencias entre problemas renales crónicos y agudos, y consejos para mantener la salud renal.\n"
+  },
+  {
+    "nid": "150837",
+    "title": "Inhibidores de la enzima convertidora de la angiotensina (ECA) y antagonistas del receptor de la angiotensina (ARA)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/inhibidores-de-la-enzima-convertidora-de-la-angiotensina-eca-y-antagonistas-del",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150879",
+    "title": "Pruebas para revisar la salud renal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/pruebas-para-revisar-la-salud-renal",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149333",
+    "title": "Granadas",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/granadas",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149293",
+    "title": "Aguacates",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/aguacates",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149207",
+    "title": "Sustitutos de la leche",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/sustitutos-de-la-leche",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149273",
+    "title": "Tofu",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/tofu",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25396",
+    "title": "Albuminuria (proteinuria)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/albuminuria-proteinuria",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25602",
+    "title": "Cociente de albúmina-creatinina en orina (CACu)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/cociente-de-albumina-creatinina-en-orina-cacu",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25593",
+    "title": "Biopsia de riñón",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/biopsia-de-rinon",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "150849",
+    "title": "Antagonistas de los receptores de mineralocorticoides no esteroideos (nsMRA)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/antagonistas-de-los-receptores-de-mineralocorticoides-no-esteroideos-nsmra",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149249",
+    "title": "Queso con bajo contenido de fósforo",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/queso-con-bajo-contenido-de-fosforo",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149117",
+    "title": "Aceites y grasas saludables",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/aceites-y-grasas-saludables",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149048",
+    "title": "Pescado",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/pescado",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "117341",
+    "title": "Especias",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/especias",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "104938",
+    "title": "Frutos secos y semillas",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/frutos-secos-y-semillas",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "107970",
+    "title": "Brócoli",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/brocoli",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "115666",
+    "title": "Fresas",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/fresas",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "105098",
+    "title": "Frijoles",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/frijoles",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "114150",
+    "title": "Tubérculos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/tuberculos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "103212",
+    "title": "Calabaza",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/calabaza",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "97252",
+    "title": "Manzanas",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/manzanas",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "93400",
+    "title": "Tomates",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/tomates",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "93399",
+    "title": "Hierbas",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/hierbas",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "97258",
+    "title": "Arándanos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/arandanos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "93397",
+    "title": "Vegetales de hoja verde",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/vegetales-de-hoja-verde",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25457",
+    "title": "Filtración glomerular estimada (FGe)",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/filtracion-glomerular-estimada-fge",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "25548",
+    "title": "Su Guía para la nueva y mejorada etiqueta de información nutricional",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/su-guia-para-la-nueva-y-mejorada-etiqueta-de-informacion-nutricional",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149289",
+    "title": "Potasio",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/potasio",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149280",
+    "title": "Potasio en su alimentación para la enfermedad renal crónica",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/potasio-en-su-alimentacion-para-la-enfermedad-renal-cronica",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149151",
+    "title": "Síndrome séptico",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/sindrome-septico",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "146473",
+    "title": "Viruela símica",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/viruela-simica",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149385",
+    "title": "Cómo buscar más información sobre los ensayos clínicos",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/como-buscar-mas-informacion-sobre-los-ensayos-clinicos",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149222",
+    "title": "Xenotrasplante",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/xenotrasplante",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149191",
+    "title": "Prevención",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/prevencion",
+    "field_search_summary_text": "Los riñones sanos eliminan desechos y exceso de agua, controlan la presión arterial y ayudan a producir glóbulos rojos y mantener huesos sanos.\n"
+  },
+  {
+    "nid": "149189",
+    "title": "¿Qué puede hacer usted para proteger sus riñones y su salud en general?",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/que-puede-hacer-usted-para-proteger-sus-rinones-y-su-salud-en-general",
+    "field_search_summary_text": "Proteja sus riñones controlando la presión, comiendo bajo en sal, evitando AINE, no fumando, haciendo ejercicio, evitando alcohol y consultando a su médico.\n"
+  },
+  {
+    "nid": "149188",
+    "title": "La Población Hispana y la Enfermedad Renal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/la-poblacion-hispana-y-la-enfermedad-renal",
+    "field_search_summary_text": "Los hispanos tienen un mayor riesgo de enfermedad renal, con 1.5 veces más probabilidades de insuficiencia renal que otros estadounidenses.\n"
+  },
+  {
+    "nid": "149187",
+    "title": "Dos Análisis Simples para Detectar la Enfermedad Renal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/dos-analisis-simples-para-detectar-la-enfermedad-renal",
+    "field_search_summary_text": "Dos pruebas simples pueden detectar la enfermedad renal: análisis de orina para proteína y análisis de sangre para creatinina y calcular el índice de filtración glomerular.\n"
+  },
+  {
+    "nid": "149186",
+    "title": "La Presión Arterial Alta y Los Riñones",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/la-presion-arterial-alta-y-los-rinones",
+    "field_search_summary_text": "La presión arterial alta, o hipertensión, es un \"asesino silencioso\" sin síntomas visibles. Puede causar daño a los riñones, corazón y cerebro. Controlarla es crucial.\n"
+  },
+  {
+    "nid": "149185",
+    "title": "Acerca de la Diabetes",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/acerca-de-la-diabetes",
+    "field_search_summary_text": "La diabetes afecta la insulina en el cuerpo, aumentando el riesgo de daño renal y otras complicaciones.\n"
+  },
+  {
+    "nid": "149183",
+    "title": "​Las Etapas de la enfermedad Renal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/las-etapas-de-la-enfermedad-renal",
+    "field_search_summary_text": "La enfermedad renal tiene cinco etapas, determinadas por la TFG y el daño renal. El tratamiento se ajusta según la etapa y el estado de los riñones.\n"
+  },
+  {
+    "nid": "149182",
+    "title": "Tratamiento",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/tratamiento",
+    "field_search_summary_text": "El tratamiento de la enfermedad renal depende del estadio y puede incluir control de la presión arterial, colesterol, azúcar en sangre y tratamiento de anemia.\n"
+  },
+  {
+    "nid": "149181",
+    "title": "El Sodio y su Dieta con la Enfermedad Crónica del Riñón",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/el-sodio-y-su-dieta-con-la-enfermedad-cronica-del-rinon",
+    "field_search_summary_text": "Reducir el consumo de sodio ayuda a controlar la acumulación de líquidos y la presión arterial en pacientes con enfermedad renal crónica.\n"
+  },
+  {
+    "nid": "149180",
+    "title": "Dieta y Trasplante",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/dieta-y-trasplante",
+    "field_search_summary_text": "Después de un trasplante, es fundamental seguir una dieta especial para evitar el rechazo del órgano y mantener la salud general.\n"
+  },
+  {
+    "nid": "149179",
+    "title": "Comiendo Fuera De Casa Con Confianza",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/comiendo-fuera-de-casa-con-confianza",
+    "field_search_summary_text": "Guía para disfrutar comer fuera con una dieta para la enfermedad renal. Planifique, haga pedidos especiales y elija restaurantes adecuados para sus necesidades.\n"
+  },
+  {
+    "nid": "149178",
+    "title": "El Fósforo y su Dieta Para la IRC",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/el-fosforo-y-su-dieta-para-la-irc",
+    "field_search_summary_text": "El fósforo es vital para huesos saludables, pero su exceso en IRC puede ser peligroso. Controle su fósforo con dieta y fijadores. Consulte a su médico.\n"
+  },
+  {
+    "nid": "149177",
+    "title": "Nutrición",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/nutricion",
+    "field_search_summary_text": "La dieta es crucial para vivir bien con enfermedad renal. A medida que la enfermedad progresa, las necesidades dietéticas cambian. Consulte a su médico sobre su nutrición.\n"
+  },
+  {
+    "nid": "25652",
+    "title": "Hemodiálisis",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/hemodialisis",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149174",
+    "title": "El Seguro y la Insuficiencia Renal",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/el-seguro-y-la-insuficiencia-renal",
+    "field_search_summary_text": "Medicare cubre gran parte de los costos de diálisis y trasplantes de riñón. También hay otras opciones de seguro disponibles para ayudar a cubrir los gastos adicionales.\n"
+  },
+  {
+    "nid": "25671",
+    "title": "Su equipo de atención de diálisis",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/su-equipo-de-atencion-de-dialisis",
+    "field_search_summary_text": "El equipo de atención de diálisis incluye nefrólogos, enfermeros, dietistas, trabajadores sociales, técnicos y más. Cada uno desempeña un papel en el manejo de su atención.\n"
+  },
+  {
+    "nid": "149172",
+    "title": "Trasplante de Riñón",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/trasplante-de-rinon",
+    "field_search_summary_text": "Trasplantes de riñón: elegibilidad, procedimiento y cuidados. Mejora la calidad de vida de los pacientes renales.\n"
+  },
+  {
+    "nid": "103302",
+    "title": "La Dieta y los Cálculos Renales",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/la-dieta-y-los-calculos-renales",
+    "field_search_summary_text": ""
+  },
+  {
+    "nid": "149167",
+    "title": "DONE ÓRGANOS",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/done-organos",
+    "field_search_summary_text": "Más de 101,000 estadounidenses esperan un trasplante de riñón, pero solo 17,000 lo reciben cada año. La donación de órganos y tejidos brinda una segunda oportunidad en la vida.\n"
+  },
+  {
+    "nid": "26901",
+    "title": "Diabetes: Los ojos, el corazón, los nervios, los pies y los riñones",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/diabetes-los-ojos-el-corazon-los-nervios-los-pies-y-los-rinones",
+    "field_search_summary_text": "Entienda cómo la diabetes afecta los ojos, el corazón, los nervios, los pies y los riñones. Conozca las complicaciones posibles y estrategias para controlar la diabetes.\n"
+  },
+  {
+    "nid": "26113",
+    "title": "¿Cómo Afecta al Cuerpo la Insuficiencia Renal?",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/como-afecta-al-cuerpo-la-insuficiencia-renal",
+    "field_search_summary_text": "Descubre cómo la insuficiencia renal afecta al cuerpo, incluyendo el impacto en la salud del corazón, presión arterial, colesterol, anemia y más.\n"
+  },
+  {
+    "nid": "25438",
+    "title": "El uso de Suplementos de Hierbas en la Insuficiencia Renal Crónica",
+    "type": "Kidney Topics",
+    "view_node": "https://www.kidney.org//es/kidney-topics/el-uso-de-suplementos-de-hierbas-en-la-insuficiencia-renal-cronica",
+    "field_search_summary_text": "Los suplementos de hierbas pueden ser riesgosos para pacientes con insuficiencia renal crónica. Infórmese antes de usarlos para problemas de salud.\n"
+  }
+]

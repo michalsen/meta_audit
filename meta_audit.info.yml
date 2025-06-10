@@ -1,0 +1,7 @@
+name: 'Meta Audit'
+type: module
+description: 'Audit meta tags for content.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:metatag

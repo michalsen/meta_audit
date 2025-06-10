@@ -1,0 +1,7 @@
+meta_audit.content_type_dropdown:
+  path: '/admin/meta_audit'
+  defaults:
+    _form: '\Drupal\meta_audit\Form\MetaAuditForm'
+    _title: 'Select Content Type'
+  requirements:
+    _permission: 'administer site configuration'

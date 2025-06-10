@@ -1,0 +1,4 @@
+services:
+  meta_audit.meta_audit_service:
+    class: 'Drupal\meta_audit\MetaAuditService'
+    arguments: ['@metatag.manager', '@entity_type.manager']
