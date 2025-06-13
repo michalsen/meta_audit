@@ -1,3 +1,6 @@
+<!-- WARNING: This is a development space for the Meta Audit Drupal module. 
+     For the official release, please visit: https://www.drupal.org/project/meta_audit/releases -->
+
 # Meta Audit
 
 A Drupal module for auditing and analyzing meta tags across your content. This module provides administrators with insights into how meta tags are configured and sourced for different content types.
