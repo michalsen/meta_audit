@@ -9,9 +9,7 @@ use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Field\FieldItemInterface;
 use Drupal\Core\Field\FieldItemListInterface;
-use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\meta_audit\MetaAuditService;
-use Drupal\metatag\Entity\MetatagDefaults;
 use Drupal\metatag\MetatagManagerInterface;
 use Drupal\node\NodeInterface;
 use Drupal\Tests\UnitTestCase;
@@ -74,7 +72,7 @@ final class MetaAuditServiceTest extends UnitTestCase {
    */
   public function testGetNodeTagsWithValidContentType(): void {
     $contentType = 'article';
-    
+
     // Mock node storage.
     $nodeStorage = $this->createMock(EntityStorageInterface::class);
     $this->entityTypeManager
@@ -107,7 +105,8 @@ final class MetaAuditServiceTest extends UnitTestCase {
 
     // Mock metatag manager to return some tags.
     $this->metatagManager
-      ->expects($this->exactly(2)) // Called twice in getAllMetaTagsForNode and getMetaTagSources
+    // Called twice in getAllMetaTagsForNode and getMetaTagSources.
+      ->expects($this->exactly(2))
       ->method('tagsFromEntity')
       ->with($node)
       ->willReturn([
@@ -123,10 +122,10 @@ final class MetaAuditServiceTest extends UnitTestCase {
     $this->assertArrayHasKey('#header', $result);
     $this->assertArrayHasKey('#rows', $result);
     $this->assertArrayHasKey('#empty', $result);
-    
+
     // Verify header structure.
     $this->assertCount(3, $result['#header']);
-    
+
     // Verify we have one row for our test node.
     $this->assertCount(1, $result['#rows']);
   }
@@ -138,7 +137,7 @@ final class MetaAuditServiceTest extends UnitTestCase {
    */
   public function testGetNodeTagsWithNoNodes(): void {
     $contentType = 'nonexistent';
-    
+
     // Mock node storage.
     $nodeStorage = $this->createMock(EntityStorageInterface::class);
     $this->entityTypeManager
@@ -161,7 +160,7 @@ final class MetaAuditServiceTest extends UnitTestCase {
     $this->assertArrayHasKey('#header', $result);
     $this->assertArrayHasKey('#rows', $result);
     $this->assertArrayHasKey('#empty', $result);
-    
+
     // Verify no rows are returned.
     $this->assertEmpty($result['#rows']);
   }
@@ -173,7 +172,7 @@ final class MetaAuditServiceTest extends UnitTestCase {
    */
   public function testGetAllMetaTagsForNodeWithEntityTags(): void {
     $node = $this->createMock(NodeInterface::class);
-    
+
     $expectedTags = [
       'title' => 'Node Specific Title',
       'description' => 'Node Specific Description',
@@ -202,7 +201,7 @@ final class MetaAuditServiceTest extends UnitTestCase {
    */
   public function testGetAllMetaTagsForNodeWithFieldTags(): void {
     $node = $this->createMock(NodeInterface::class);
-    
+
     // Mock that metatag manager returns empty tags.
     $this->metatagManager
       ->expects($this->once())
@@ -221,16 +220,16 @@ final class MetaAuditServiceTest extends UnitTestCase {
       'title' => 'Field Title',
       'description' => 'Field Description',
     ]);
-    
+
     $fieldItem = $this->createMock(FieldItemInterface::class);
     $fieldItem->value = $fieldValue;
-    
+
     $fieldList = $this->createMock(FieldItemListInterface::class);
     $fieldList->expects($this->once())
       ->method('get')
       ->with(0)
       ->willReturn($fieldItem);
-    
+
     $node->expects($this->once())
       ->method('get')
       ->with('field_meta_tags')
@@ -304,7 +303,8 @@ final class MetaAuditServiceTest extends UnitTestCase {
       ->expects($this->once())
       ->method('tagsFromEntity')
       ->with($node)
-      ->willReturn([]); // Return empty array instead of null
+    // Return empty array instead of null.
+      ->willReturn([]);
 
     // Use reflection to test the protected method.
     $reflection = new \ReflectionClass($this->metaAuditService);
