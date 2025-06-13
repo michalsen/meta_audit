@@ -13,6 +13,12 @@ use Drupal\metatag\Entity\MetatagDefaults;
 
 /**
  * Meta Tag Audit Service.
+ *
+ * @category  Drupal
+ * @package   Drupal\meta_audit
+ * @author    Eric Michalsen <eric.michalsen@gmail.com>
+ * @license   GPL-2.0-or-later
+ * @link      https://www.drupal.org/project/meta_audit
  */
 final class MetaAuditService
 {
@@ -21,6 +27,14 @@ final class MetaAuditService
     protected $entityTypeManager;
     protected $metatagManager;
 
+    /**
+     * Constructs a MetaAuditService object.
+     *
+     * @param \Drupal\metatag\MetatagManagerInterface $metatagManager
+     *   The metatag manager service.
+     * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
+     *   The entity type manager service.
+     */
     public function __construct(
         MetatagManagerInterface $metatagManager,
         EntityTypeManagerInterface $entityTypeManager,
@@ -29,6 +43,15 @@ final class MetaAuditService
         $this->entityTypeManager = $entityTypeManager;
     }
 
+    /**
+     * Builds a render array table of nodes and their meta tags for a content type.
+     *
+     * @param string $content_type
+     *   The machine name of the content type to audit.
+     *
+     * @return array
+     *   A render array for a Drupal table listing nodes and their meta tags.
+     */
     public function getNodeTags(string $content_type): array
     {
         $nodeStorage = $this->entityTypeManager->getStorage('node');
@@ -69,6 +92,15 @@ final class MetaAuditService
         ];
     }
 
+    /**
+     * Retrieves all meta tags for a given node, checking entity, field, content type, and global defaults.
+     *
+     * @param \Drupal\node\NodeInterface $node
+     *   The node entity to retrieve meta tags for.
+     *
+     * @return array
+     *   An array of meta tags.
+     */
     protected function getAllMetaTagsForNode($node): array
     {
         // 1. Check entity-specific tags first
@@ -102,6 +134,17 @@ final class MetaAuditService
         return is_array($tags) ? $tags : [];
     }
 
+    /**
+     * Determines the source of each meta tag for a given node.
+     *
+     * @param \Drupal\node\NodeInterface $node
+     *   The node entity to check meta tag sources for.
+     * @param array $tags
+     *   The array of meta tags to check sources for.
+     *
+     * @return array
+     *   An array mapping meta tag keys to their sources.
+     */
     protected function getMetaTagSources($node, array $tags): array
     {
         $sources = [];
